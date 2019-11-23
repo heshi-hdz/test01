@@ -1,4 +1,4 @@
-package com.tensquare.friend.controller;
+﻿package com.tensquare.friend.controller;
 
 import com.netflix.discovery.converters.Auto;
 import com.tensquare.friend.service.FriendService;
@@ -47,7 +47,9 @@ public class FriendController {
      * @return
      */
     @RequestMapping(value = "/like/{friendid}/{type}",method = RequestMethod.PUT)
+   //type 有两种类型1喜欢，类型2不喜欢
     public Result addFriend(@PathVariable String friendid,@PathVariable String type){
+  //判断是否登录，需要再看看单点登录 
         Claims claims = (Claims) request.getAttribute("user_claims");
         if (claims==null) {
             return new Result(false,StatusCode.ACCESSERROR,"无权访问");
@@ -55,6 +57,7 @@ public class FriendController {
 
         //如果是喜欢
         if (type.equals("1")) {
+//claims.getId(),当前用户id
             if (friendService.addFriend(claims.getId(), friendid) == 0) {
                 return new Result(false, StatusCode.REPERROR, "已经添加此好友");
             }
