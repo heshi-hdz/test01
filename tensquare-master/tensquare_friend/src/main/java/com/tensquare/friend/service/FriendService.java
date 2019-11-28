@@ -61,9 +61,9 @@ public class FriendService {
         friend.setFriendid(friendid);
         friend.setIslike("0");
         friendDao.save(friend);
-
         //判断对方是否喜欢你,将对方作为用户,自己作为好友
         if (friendDao.selectCount(friendid,userid)>0) {
+
             //同时更新两个人好友表的数据
             friendDao.updateLike(userid,friendid,"1");
             friendDao.updateLike(friendid,userid,"1");
