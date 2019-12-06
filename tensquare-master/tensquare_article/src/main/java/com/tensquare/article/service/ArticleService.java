@@ -43,6 +43,7 @@ public class ArticleService {
 	 */
 	@Transactional
 	public int updateThumbup(String id){
+		System.out.println("test");
 		return articleDao.updateThumbup(id);
 	}
 
