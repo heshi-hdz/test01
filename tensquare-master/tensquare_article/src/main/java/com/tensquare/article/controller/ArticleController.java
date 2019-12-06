@@ -51,6 +51,7 @@ public class ArticleController {
 	 */
 	@RequestMapping(method= RequestMethod.GET)
 	public Result findAll(){
+
 		return new Result(true,StatusCode.OK,"查询成功",articleService.findAll());
 	}
 	

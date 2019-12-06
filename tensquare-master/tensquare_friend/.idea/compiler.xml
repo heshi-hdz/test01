@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="tensquare_article" />
         <module name="tensquare_friend" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="tensquare_friend" target="1.5" />
+      <module name="tensquare_article" target="1.5" />
+      <module name="tensquare_friend" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
