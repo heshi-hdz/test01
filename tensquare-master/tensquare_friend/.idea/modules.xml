@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../project/Program/Program.iml" filepath="$PROJECT_DIR$/../../project/Program/Program.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../project/dms.iml" filepath="$PROJECT_DIR$/../../project/dms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../project/dms-common/dms-common.iml" filepath="$PROJECT_DIR$/../../project/dms-common/dms-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../project/dms-web/dms-web.iml" filepath="$PROJECT_DIR$/../../project/dms-web/dms-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/../tensquare_article/tensquare_article.iml" filepath="$PROJECT_DIR$/../tensquare_article/tensquare_article.iml" />
       <module fileurl="file://$PROJECT_DIR$/tensquare_friend.iml" filepath="$PROJECT_DIR$/tensquare_friend.iml" />
     </modules>
